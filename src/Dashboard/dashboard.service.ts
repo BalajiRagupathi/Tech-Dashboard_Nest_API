@@ -1441,8 +1441,8 @@ export class DashboardService{
         }
 
         
-        this.tech_list.sort(this.compareValues('popularity', 'desc'));
-        return [...this.tech_list];
+        ;
+        return [...this.tech_list.sort(this.compareValues('popularity', 'desc'))];
     }
 
     compareValues(key, order = 'asc') {
