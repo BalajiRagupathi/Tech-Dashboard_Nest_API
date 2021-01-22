@@ -9,6 +9,6 @@ export class DashboardController {
   @Get('list')
   getTechList() {
     let tech_list = this.tech_list_data.getTechList();
-    return { list: tech_list, top = tech_list.slice(0,5) };
+    return { list: tech_list, top: tech_list.slice(0,5) };
   }
 }
