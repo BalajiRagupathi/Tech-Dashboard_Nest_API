@@ -1421,7 +1421,7 @@ export class DashboardService{
     private tech_list: Dashboard[] = [];
 
     getTechList(){
-
+        this.tech_list = [];
         for(let data in this.dataset){
 
             if( data !== "user_id" ){
